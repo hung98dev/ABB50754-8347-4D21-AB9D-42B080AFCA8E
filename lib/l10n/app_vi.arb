@@ -1,0 +1,9 @@
+{
+    "splashScreen": "Splash screen",
+    "username": "Tên tài khoản/Mã nhân viên",
+    "aCompleteValidUserNameOrEmployyID" : "Tên người dùng/Mã nhân viên",
+    "passwordAtLeast6Characters" : "Mật khẩu có ít nhất 6 kí tự",
+    "password" : "Mật khẩu",
+    "btnLogin" : "Đăng nhập",
+    "enterPassword": "Nhập mật khẩu"
+}

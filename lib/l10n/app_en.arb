@@ -1,0 +1,9 @@
+{
+    "splashScreen": "Splash screen",
+    "username": "UserName",
+    "aCompleteValidUserNameOrEmployyID" : "Username or EmployeeID",
+    "passwordAtLeast6Characters" : "Password must be at least 6 characters long",
+    "password" : "Password",
+    "btnLogin" : "Login",
+    "enterPassword": "Enter password"
+}
