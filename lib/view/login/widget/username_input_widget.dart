@@ -26,7 +26,7 @@ class UserNameInput extends StatelessWidget {
             decoration: InputDecoration(
               suffixIcon: const Icon(
                 Icons.person,
-                color: ThemeConfig.colorLoginTheme,
+                color: ThemeConfig.primaryColor,
               ),
               labelText: AppLocalizations.of(context)!
                   .aCompleteValidUserNameOrEmployyID,
@@ -38,7 +38,7 @@ class UserNameInput extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8.0),
                 borderSide: BorderSide(
                   color:
-                      ThemeConfig.colorLoginTheme, // Màu khi focus
+                      ThemeConfig.primaryColor, // Màu khi focus
                   width: 1.5,
                 ),
               ),

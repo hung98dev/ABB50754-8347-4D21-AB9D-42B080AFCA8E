@@ -27,8 +27,6 @@ class ThemeConfig {
   static const textColorDCE8E8 = Color(0xffDCE8E8);
   static const textColor37C9EE = Color(0xff37C9EE);
 
-  static const colorLoginTheme = Color.fromARGB(255, 165, 125, 230);
-
   /// fonts family
   static const pangramRegular = 'Pangram Regular';
   static const pangramMedium = 'Pangram Medium';

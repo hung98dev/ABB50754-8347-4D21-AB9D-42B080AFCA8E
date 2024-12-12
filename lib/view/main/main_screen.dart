@@ -20,7 +20,7 @@ class _MainScreenState extends State<MainScreen> {
 
   // Cache các screen để tránh rebuild không cần thiết
   final List<Widget> _screens = [
-    const HomeScreen(),
+    HomeScreen(),
     const HomeScreen2(),
     const HomeScreen3(),
   ];

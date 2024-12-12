@@ -1,17 +1,33 @@
+// Màn hình chính
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+import 'widget/widgets.dart';
 
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
+class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber,
+      backgroundColor: Colors.grey[200],
+      body: Stack(
+        children: [
+          // Nội dung cuộn
+          ContentScroll(),
+          // AppBar cố định
+          const Positioned(
+            top: 0,
+            left: 0,
+            right: 0,
+            child: FixedAppBar(),
+          ),
+          // Thẻ thông tin lịch trình
+          const Positioned(
+            top: 140,
+            left: 16,
+            right: 16,
+            child: ScheduleCard(),
+          ),
+        ],
+      ),
     );
   }
 }

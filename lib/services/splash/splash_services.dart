@@ -15,18 +15,18 @@ class SplashServices {
     SessionController().getUserFromPreference().then((value) async {
       if (SessionController.isLogin ?? false) {
         Timer(
-          const Duration(seconds: 2),
+          const Duration(seconds: 1),
           () => Navigator.pushNamedAndRemoveUntil(context, RoutesName.main, (route) => false),
         );
       } else {
         Timer(
-          const Duration(seconds: 2),
+          const Duration(seconds: 1),
           () => Navigator.pushNamedAndRemoveUntil(context, RoutesName.login, (route) => false),
         );
       }
     }).onError((error, stackTrace) {
       Timer(
-        const Duration(seconds: 2),
+        const Duration(seconds: 1),
         () => Navigator.pushNamedAndRemoveUntil(context, RoutesName.login, (route) => false),
       );
     });

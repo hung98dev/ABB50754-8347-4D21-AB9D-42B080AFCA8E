@@ -26,7 +26,7 @@ class PasswordInput extends StatelessWidget {
             decoration: InputDecoration(
               suffixIcon: const Icon(
                 Icons.lock,
-                color: ThemeConfig.colorLoginTheme, // Icon color
+                color: ThemeConfig.primaryColor, // Icon color
               ),
               labelText: AppLocalizations.of(context)!.password, // Label text
               labelStyle: const TextStyle(
@@ -36,7 +36,7 @@ class PasswordInput extends StatelessWidget {
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(8.0),
                 borderSide: BorderSide(
-                  color: ThemeConfig.colorLoginTheme, // Focus border color
+                  color: ThemeConfig.primaryColor, // Focus border color
                   width: 1.5,
                 ),
               ),

@@ -18,7 +18,7 @@ class ForgotPassword extends StatelessWidget {
             child: Text(
               'Quên mật khẩu',
               style: TextStyle(
-                color: ThemeConfig.colorLoginTheme,
+                color: ThemeConfig.primaryColor,
                 fontSize: 12,
                 decoration: TextDecoration.underline,
               ),

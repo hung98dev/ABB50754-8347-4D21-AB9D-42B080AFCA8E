@@ -20,8 +20,9 @@ class BottomNavigationBarWidget extends StatelessWidget {
         return Theme(
           data: Theme.of(context).copyWith(
             navigationBarTheme: NavigationBarThemeData(
-              backgroundColor: ThemeConfig.colorLoginTheme,
+              backgroundColor: ThemeConfig.primaryColor,
               indicatorColor: Colors.blueAccent,
+              height: 50,
               iconTheme: WidgetStateProperty.resolveWith((states) {
                 if (states.contains(WidgetState.selected)) {
                   return const IconThemeData(color: Colors.white);
@@ -31,13 +32,13 @@ class BottomNavigationBarWidget extends StatelessWidget {
               labelTextStyle: WidgetStateProperty.resolveWith((states) {
                 if (states.contains(WidgetState.selected)) {
                   return const TextStyle(
-                    fontSize: 14,
+                    fontSize: 10,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   );
                 }
                 return const TextStyle(
-                  fontSize: 12,
+                  fontSize: 8,
                   fontWeight: FontWeight.normal,
                   color: Colors.grey,
                 );

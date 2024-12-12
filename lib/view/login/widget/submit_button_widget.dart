@@ -43,7 +43,7 @@ class SubmitButton extends StatelessWidget {
                           RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(8),
                               side: BorderSide(
-                                  color: ThemeConfig.colorLoginTheme)))),
+                                  color: ThemeConfig.primaryColor)))),
                   onPressed: () {
                     if (formKey.currentState.validate()) {
                       context.read<LoginBloc>().add(LoginApi());
